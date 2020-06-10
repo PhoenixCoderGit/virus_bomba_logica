@@ -5,16 +5,16 @@
 
 import time, datetime
 
-explota_fecha_hora_objetivo = "2020-06-09 20:51:00"
+explota = "2020-06-09 20:51:00"
 
 
 while True:
-    codigo_numeros = time.time()
-    fecha_hora_explosion = datetime.datetime.fromtimestamp(codigo_numeros).strftime('%Y-%m-%d %H:%M:%S')
+    numero = time.time()
+    fecha_actual = datetime.datetime.fromtimestamp(numero).strftime('%Y-%m-%d %H:%M:%S')
 
-    print (fecha_hora_explosion)
+    print (fecha_actual)
 
-    if fecha_hora_explosion == explota_fecha_hora_objetivo:
+    if fecha_actual == explota:
 
         print("LA BOMBA LOGICA EXPLOTO CON EXITO!")
 
